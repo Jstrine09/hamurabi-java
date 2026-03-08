@@ -8,7 +8,7 @@ import java.util.Scanner;
 // I'm serious.
 // (how the hell would you ever be able to TEST this piece of code?)
 //
-public class HAMURABI {
+public class hamurabi {
 	static int totalDeaths = 0, percentDied = 0, year = 0, population = 95, stores = 2800, immigrants = 5, deaths,
 		harvest = 3000, yeild = 3, acres = harvest / yeild, eaten = harvest - stores, landPrice, fullPeople, temp;
 	static boolean plague = false;
@@ -146,7 +146,7 @@ public class HAMURABI {
 	}
 	
 	public static void main(String[] args) throws IOException {
-		HAMURABI a = new HAMURABI();
+		hamurabi a = new hamurabi();
 		System.out.println("\t\t\t\tHAMURABI\n\t       CREATIVE COMPUTING MORRISTOWN, NEW JERSEY\n\n" +
 				"TRY YOUR HAND AT GOVERNING ANCIENT SUMERIA\nSUCCESSFULLY FOR A TEN-YEAR TERM OF OFFICE.");
 		while (year < 10)
