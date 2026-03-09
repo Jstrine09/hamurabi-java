@@ -226,9 +226,7 @@ public class Hammurabi {
     }
 
 	static void printFinalScore() {
-        System.out.println("\n════════════════════════");
         System.out.println("     FINAL REPORT       ");
-        System.out.println("════════════════════════");
         System.out.println("Years ruled    : " + year);
         System.out.println("Population     : " + population);
         System.out.println("Acres owned    : " + acres);
@@ -239,7 +237,7 @@ public class Hammurabi {
 
         // Rating based on acres per person and starvation
         int acresPerPerson = acres / Math.max(1, population);
-        if      (totalStarved == 0 && acresPerPerson > 10) System.out.println("Rating: LEGENDARY - A true Hammurabi!");
+        if      (totalStarved == 0 && acresPerPerson > 10) System.out.println("Rating: LEGENDARY - A true God!");
         else if (totalStarved < 50  && acresPerPerson > 7)  System.out.println("Rating: NOBLE     - Well ruled.");
         else if (totalStarved < 100 && acresPerPerson > 4)  System.out.println("Rating: FAIR      - Could be better.");
         else                                                  System.out.println("Rating: POOR      - Your people suffered.");
