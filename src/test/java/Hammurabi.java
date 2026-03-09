@@ -216,7 +216,6 @@ public class Hammurabi {
             System.out.println("\n*** You ran out of grain. Your people revolt! ***");
             return true;
         }
-        // If over 45% of total people starved across all years
         double starveRate = (double) totalStarved / (totalStarved + population);
         if (starveRate > 0.45) {
             System.out.println("\n*** Over 45% of your people have starved. You are impeached! ***");
@@ -235,7 +234,6 @@ public class Hammurabi {
         System.out.println("Acres/person   : " + (acres / Math.max(1, population)));
         System.out.println();
 
-        // Rating based on acres per person and starvation
         int acresPerPerson = acres / Math.max(1, population);
         if      (totalStarved == 0 && acresPerPerson > 10) System.out.println("Rating: LEGENDARY - A true God!");
         else if (totalStarved < 50  && acresPerPerson > 7)  System.out.println("Rating: NOBLE     - Well ruled.");
